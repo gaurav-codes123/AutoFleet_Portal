@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% block main %}
+{% load static %}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header">
+    <h1 class="display-3 text-uppercase text-white mb-3">About</h1>
+    <div class="d-inline-flex text-white">
+        <h6 class="text-uppercase m-0"><a class="text-white" href="{% url 'index' %}">Home</a></h6>
+        <h6 class="text-body m-0 px-3">/</h6>
+        <h6 class="text-uppercase text-body m-0">About</h6>
+    </div>
+</div>
+<!-- Page Header Start -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span
+                class="text-primary">Car Rental Portal</span>
+        </h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <img class="w-75 mb-4" src="{% static 'img/about.png' %}" alt="">
+                <p>This Car Rental Portal Management System is designed for a web services provider. Users can visit the platform to book their desired car online, selecting the car, duration, and other options. The system includes a comprehensive car rental portal management system, allowing the admin to easily add, update, or delete any car and check user details. The primary purpose of this project is to increase client accessibility, as customers living far from showrooms can also book online and have the car delivered to their doorstep. The technologies used in this project include HTML5, CSS3, JavaScript, Bootstrap for the frontend, and Python Django with SQLite for the backend.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Banner Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row mx-0">
+            <div class="col-lg-6 px-0">
+                <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
+                    <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="{% static 'img/banner-left.png' %}"
+                         alt="">
+                    <div class="text-right">
+                        <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
+                        <p class="mb-4">Experienced, reliable driver with a clean record and excellent navigation skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 px-0">
+                <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
+                    <div class="text-left">
+                        <h3 class="text-uppercase text-light mb-3">Looking for a car?</h3>
+                        <p class="mb-4">Seeking reliable, fuel-efficient car with spacious interior and modern features</p>
+                    </div>
+                    <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="{% static 'img/banner-right.png' %}"
+                         alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner End -->
+
+
+<!-- Vendor Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="owl-carousel vendor-carousel">
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-1.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-2.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-3.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-4.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-5.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-6.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-7.png' %}" alt="">
+            </div>
+            <div class="bg-light p-4">
+                <img src="{% static 'img/vendor-8.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Vendor End -->
+
+{% endblock %}
